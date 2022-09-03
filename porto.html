@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" type="text/css" href="porto.css">
+
+</head>
+<body>
+    <nav>
+        <div class="menu-mobile">
+            <a href="#" onclick="ShowMenu()">Menu</a>
+        </div>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Project</a></li>
+            <li><a href="#">About Me</a></li>     
+            <li><a href="#">Contact</a></li>     
+        </ul>
+    </nav>
+    <script>
+        function ShowMenu()
+        {
+            var menu = document.getElementById("menu");
+            var box = document.getElementById("box-profile");
+
+            if (menu.style.display === "block"){
+                menu.style.display = "none";
+                box.style.paddingTop = "0px";
+            }else{
+                menu.style.display = "block";
+                box.style.paddingTop = "125px";
+
+            }
+        }
+    </script>
+</body>
+</html>
